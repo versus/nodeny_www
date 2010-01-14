@@ -11,6 +11,10 @@ role :web, "nodeny.ukrindex.com"                          # Your HTTP server, Ap
 role :app, "nodeny.ukrindex.com"                          # This may be the same as your `Web` server
 role :db,  "nodeny.ukrindex.com", :primary => true 
 
+task :after_symlink, :roles => [:web,:app, :db] do
+  run "sudo /usr/bin/mongrel_cluster_ctl restart"
+end
+
 task :restart_mongrel_cluster, :roles => [:app, :db, :web] do
   run "sudo /usr/bin/mongrel_cluster_ctl restart"
 end
