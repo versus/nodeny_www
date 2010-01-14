@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META NAME="webmoney.attestation.label" CONTENT="webmoney attestation label#43C8F344-E6FD-47DF-8A91-382F60CDE431"> 
+	<meta name="description" content="nodeny - биллинговая система для домашних сетей, домашние сети это просто..." />
+    <meta name="keywords" content="домашння сеть, ,биллинг, биллинговая система для домашних сетей, программа учета, старгейзер, stargazer" />
+<LINK REL="shortcut icon" HREF="/images/favicon.ico" TYPE="image/x-icon">
+
+<title>
+	NoDeny |Биллинговая система для домашних сетей
+</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="Shortcut icon" href="/images/favicon.png">
+
+    <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'jquery-ui' %>
+    <%= javascript_include_tag 'jrails' %>
+    <%= javascript_include_tag 'jquery.jgrowl' %>
+    <%= javascript_include_tag 'jquery.timers' %>
+    <%= javascript_include_tag 'jquery.timers' %>
+    <%= javascript_include_tag 'jquery.galleriffic' %>
+    <%=stylesheet_link_tag 'gallery' %>
+    <%=stylesheet_link_tag 'main' %>
+  </head>
+  <body>		
+<div id="header">
+		
+		    <div id="logoBox"><a href="/" title="Nodeny - домашняя сеть это просто " ><img src="/images/Nodeny_logo.gif" 
+		    width="347" height="41" alt="NoDeny Logo" title="Nodeny - создай свою домашнюю сеть" border="0" /></a></div>	
+	<div id="contactBox"><h2>тел: +380 (97) 9102264 (Валентин)</h2><h4 style="margin:15px;"><img src="http://c.skype.com/i/images/icons/chat_16x16_white.png" />&nbsp; <a href="http://www.skype.com/intl/ru/" target=_blank>skype</a>: versus.ua <br/><img src="http://www.google.com/talk/images/icons/chat_icon.gif"> <a href="http://www.google.com/talk/intl/ru/" target="_blank">gtalk</a>/email:  versus.ua@gmail.com</h4></div>
+		</div>
+		<div id="navBar" class="clearfix">
+			<a href="/detail" title="Посмотреть описание программы">Описание</a>
+                        <a href="/price" title="Узнать цены на NoDeny">Цены</a>
+			<a href="http://forum.nodeny.com.ua" title="Вопросы" target="_blank" >Форум </a>
+			<a href="/sale" title="пользователям системы">Кyпить</a>
+		</div>
+
+<style type='text/css'>div.navigation{width:200px;float: left;}div.content{display:block;}</style>
+
+<div style="width:800px; padding-top:0px;">
+<div style="padding:10px; ">
+<div id="navigation" class="navigation">
+<ul class="thumbs noscript">
+<li><a href="/images/p1.gif"  title="Главная" description="Для администратора наглядно отображены: клиенты сети, авторизованы ли они в данный момент, заблокирован ли доступ, есть ли превышение лимитов, баланс, режим тарификации.
+"><img src="/images/p1small.gif" alt="Главная" /></a></li>
+<li><a href="/images/p2.gif"  title="Фильтр" description="
+Фильтр по улице с группировкой по домам."><img src="/images/p2small.gif" alt="Фильтр" /></a></li>
+<li><a href="/images/p3.gif"  title="Редактирование платежа" description="Окно для осуществления платежей"><img src="/images/p3small.gif" alt="Редактирование платежа" /></a></li>
+<li><a href="/images/p4.gif"  title="Статистика" description="История платежей клиента"><img src="/images/p4small.gif" alt="Статистика" /></a></li>
+<li><a href="/images/p5.gif"  title="Настройки" description="Один из экранов настроек"><img src="/images/p5small.gif" alt="Настройки" /></a></li>
+<li><a href="/images/p6.gif"  title="Статистика" description="Срез детальной статистики трафика"><img src="/images/p6small.gif" alt="Статистика" /></a></li>
+<li><a href="/images/p13.gif"  title="Информация" description="Привязка нескольких ip  адресов к клиенту"><img src="/images/p13small.gif" alt="Информация" /></a></li>
+<li><a href="/images/p15.gif"  title="Редактирование клиента" description="Окно редактирования данных клиента. У данного администратора полный доступ"><img src="/images/p15small.gif" alt="Редактирование клиента" /></a></li>
+<li><a href="/images/p14.gif"  title="Оплата" description="Расшифровка снятия денег"><img src="/images/p14small.gif" alt="Оплата" /></a></li>
+<li><a href="/images/p16.gif"  title="Редактирование клиента" description="Окно редактирования данных клиента для администратора с ограниченным доступом к группе клиента"><img src="/images/p16small.gif" alt="Редактирование клиента" /></a></li>
+<li><a href="/images/p17.gif"  title="Статистика" description="История событий"><img src="/images/p17small.gif" alt="Статистика" /></a></li>
+<li><a href="/images/p18.gif"  title="Статистика" description="Клиентская статистика"><img src="/images/p18small.gif" alt="Статистика" /></a></li>						
+</ul>
+</div>
+<div>
+<!-- Start Gallery Html Containers -->
+<div id="gallery" class="content">
+  <div id="controls" class="controls"></div>
+  <div id="details" class="embox">
+<div id="image-title" class="image-title"></div>
+<div id="image-desc" class="image-desc"></div>
+</div>
+<br/>
+<div id="slideshow" class="slideshow"></div>
+</div>
+<script type="text/javascript">			
+			$(document).ready(function() {
+				var gallery = $('#gallery').galleriffic('#navigation', {
+					delay:                100,
+					numThumbs:            12,
+					imageContainerSel:    '#slideshow',
+					controlsContainerSel: '#controls',
+					titleContainerSel:    '#image-title',
+					descContainerSel:     '#image-desc',
+					downloadLinkSel:      '#download-link',
+					renderSSControls:     true,
+					renderNavControls:    false,
+					playLinkText:         '',
+					pauseLinkText:        '',
+					prevLinkText:         '',
+					nextLinkText:         '',
+					nextPageLinkText:     'След &rsaquo;',
+					prevPageLinkText:     '&lsaquo; Пред'
+
+				});
+				
+				gallery.onFadeOut = function() {
+					$('#details').fadeOut('fast');
+				};
+				
+				gallery.onFadeIn = function() {
+					$('#details').fadeIn('fast');
+				};
+			});
+		</script>
+
+				<!-- End Gallery Html Containers -->
+
+</div>
+
+</div>
+</div>
+</body>

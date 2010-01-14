@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META NAME="webmoney.attestation.label" CONTENT="webmoney attestation label#43C8F344-E6FD-47DF-8A91-382F60CDE431"> 
+	<meta name="description" content="nodeny - биллинговая система для домашних сетей, домашние сети это просто..." />
+    <meta name="keywords" content="домашння сеть, ,биллинг, биллинговая система для домашних сетей, программа учета, старгейзер, stargazer" />
+<LINK REL="shortcut icon" HREF="/images/favicon.ico" TYPE="image/x-icon">
+
+<title>
+	NoDeny |Биллинговая система для домашних сетей
+</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="Shortcut icon" href="/images/favicon.png">
+
+    <%=stylesheet_link_tag 'main' %>
+    <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'jquery-ui' %>
+    <%= javascript_include_tag 'jrails' %>
+    <%= javascript_include_tag 'jquery.jgrowl' %>
+    <%= javascript_include_tag 'jquery.timers' %>
+    <%= javascript_include_tag 'jquery.timers' %>
+    <%= javascript_include_tag 'jquery.galleriffic' %>
+
+
+</head>
+<body>		
+<div id="header">
+		
+		    <div id="logoBox"><a href="/" title="Nodeny - домашняя сеть это просто " ><img src="/images/Nodeny_logo.gif" 
+		    width="347" height="41" alt="NoDeny Logo" title="Nodeny - создай свою домашнюю сеть" border="0" /></a></div>	
+	<div id="contactBox"><h2>тел: +380 (97) 9102264 (Валентин)</h2><h4 style="margin:15px;"><img src="http://c.skype.com/i/images/icons/chat_16x16_white.png" />&nbsp; <a href="http://www.skype.com/intl/ru/" target=_blank>skype</a>: versus.ua <br/><img src="http://www.google.com/talk/images/icons/chat_icon.gif"> <a href="http://www.google.com/talk/intl/ru/" target="_blank">gtalk</a>/email:  versus.ua@gmail.com</h4></div>
+		</div>
+		<div id="navBar" class="clearfix">
+			<a href="/detail" title="Посмотреть описание программы">Описание</a>
+                        <a href="/price" title="Узнать цены на NoDeny">Цены</a>
+                        <a href="/sale" title="пользователям системы">Кyпить</a>                        
+			<a href="http://forum.nodeny.com.ua" title="Вопросы" target="_blank" >Форум </a>
+		</div>
+		<div id="mainBar" class="clearfix">
+    <div class="subTabPanelWrapper">
+        <ul class="subTabPanel">
+          <li class="pageTitle"> 
+            <%= yield :top%>
+          </li>
+            <li><a href="/arhitectura" title="Описание архитектруры 48 версии биллинга">Архитектура</a></li>
+			<li><a href="/policy" title="Скачать Nodeny 49"><b>Скачать</b></a></li>
+                        <li><a href="http://twitter.com/nodeny" title="твиттер">Твиттер</a></li>
+			<li><a href="/demo"  title="Демоверсия биллинга"><span style="color:red"><b>Демо версия</b></span></a></li>
+		        </ul>
+    </div>
+    <div id="contentWrapper">
+      </div>
+      <%= yield %>
+</div>
+		<div id="featuresBar" class="clearfix" style="padding-top:10px;">
+			<div class="featureItem">
+				<a href="/detail" title="Описание биллинга Nodeny."><img src="/images/browse_features.jpg" width="200" height="181" border="0" 
+				alt="Биллинг это просто" title="Посмотреть описание программы"/></a>
+				<h3><a href="/detail" title="Посмотреть описание программы">Описание</a></h3>
+			</div>
+			<div class="featureItem">
+				<a href="http://groups.google.com/group/nodeny"  target="_blank" title="Покупка биллинга"><img src="/images/buyers_guide_features.jpg"
+				 width="200" height="181" border="0" alt="Руководство покупателя" title="Как получить биллинг!" /></a>
+				<h3><a href="http://groups.google.com/group/nodeny" target="_blank"  title="Как купить биллинг!">Задать вопрос</a></h3>
+			</div>
+			<div class="featureItem">
+				<a href="/gallery" title="Посмотреть "><img src="/images/gallery_features.jpg" 
+				width="200" height="181" border="0" alt="Скриншоты..." /></a>
+				<h3><a href="Gallery.aspx" title="Скриншоты работы программы">Галерея</a></h3>
+			</div>
+			<div class="featureItem">
+				<a href="/demo" title="demo, демка, демоверсия, демонстрация"><img src="/images/life3_features.jpg"
+				 width="199" height="181" border="0" alt="Демоверсия программы" title="Демоверсия рабочей системы" /></a>
+				<h3><a href="/demo" title="демоверсия рабочей системы">Демо</a></h3>
+			</div>
+		</div>
+		<div id="footer" class="clearfix">
+			<div id="footer_wrapper">
+                          <p><a href="/" >Главная</a> |  <a href="/policy" title="Лицензионное соглашение о пользовании биллингом">Лицензионное соглашение</a></p>
+				
+			</div>
+        
+		</div>
+<div align="center" style="color:white">&copy;&nbsp;Все авторские права на программный комплекс "NoDeny" принадлежат Волик С.Б.</div>
+</body>
+</html>

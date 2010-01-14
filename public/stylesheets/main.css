@@ -1,0 +1,902 @@
+
+/* General Page settings */
+html, body {
+    margin:0;
+    padding:0;
+    font:normal 12px/18px Arial, Verdana, sans-serif;
+    background: #0d2f44 url('/images/background_top.gif') repeat-x left top;
+}
+
+html #mainBar {
+	width: 785px;
+	color: #00243a;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+html #mainBar p {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 21px;
+	color: #00243A;
+	margin-top: 0px;
+}
+
+html #featuresBar {
+    width: 799px;
+    position: relative;
+    padding: 0 8px;
+}
+
+img {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+}
+
+#header, #featuresBar, #mainBar{
+    width: 801px;
+    background: url('/images/content_sideshadow.png') repeat-y left top;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 7px;
+}
+
+/* Header */
+#header {
+    height: 86px;
+}
+
+#header #logoBox {
+    padding: 22px 0px 0px 25px;
+    display: block;
+    margin: 0;
+    float: left;
+}
+#header #contactBox {
+    padding: 5px 5px 5px 5px;
+    display: block;
+    margin: 0;
+    float: left;
+    width: 395px;
+}
+#header h2 {
+    margin: 0px;
+    padding: 0px;
+    color: #00243A;
+    font-size: 20px;
+    display: block;
+}
+
+/*Navigation*/
+#navBar {
+	width:775px;
+	text-align:center;
+	padding:0 20px;
+	font:normal 18px 'Century Gothic', Arial, Verdana, sans-serif;
+	font-weight:bold;
+	margin:0 auto;
+}
+
+#navBar a {
+	padding:13px 0 12px 0;
+	display:block;
+	position:relative;
+	float:left;
+	width:193px;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	background:url('/images/navbar_rollover.gif') repeat-x left -200px;
+}
+
+#navBar a:hover {
+	color:#6acebf;
+	background:url('/images/navbar_rollover.gif') repeat-x left top;
+}
+
+/* mainBar */
+.cube_homepage {
+	float:right;
+	position:relative;
+	display:block;
+}
+
+/* Features Bar */
+.featureItem {
+	float:left;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.featureItem h3 {
+	top:-180px;
+	position:relative;
+	margin-bottom:-35px;
+}
+
+.featureItem h3 a {
+	font:normal 16px Arial, Verdana, sans-serif;
+	font-weight:bold;
+	color:#477a99;
+	text-decoration:none;
+}
+
+.featureItem h3 a:hover, .featureItem:hover h3 a {
+	text-decoration:underline;
+	color:#00243a;
+}
+
+/* Footer */
+#footer {
+	width:100%;
+	background:url('/images/footer_background.gif') repeat-x left top;
+	padding:0;
+	text-align:center;
+	border-bottom:1px solid #00243a;
+}
+
+#footer_wrapper {
+	width:800px;
+	margin:0 auto;
+	color:white;
+	padding:0;
+}
+
+#footer h1 {
+	font:normal 22px 'Century Gothic', 'Avant Garde', Arial, sans-serif;
+	font-weight:bold;
+	float:left;
+	width:270px;
+	margin:0;
+	padding:10px 0;
+}
+
+#footer p {
+	float:right;
+	margin:0;
+	padding:10px 0;
+	width:270px;
+	color:white;
+}
+
+#footer p a {
+	color:white;
+	text-decoration:none;
+}
+
+#footer p a:hover {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.footer_quote {
+	background:url('/images/request_quote_footer.jpg') no-repeat left bottom;
+	display:block;
+	width:260px;
+	padding:14px 0;
+	text-align:center;
+	text-decoration:none;
+	float:left;
+}
+
+.footer_quote:hover {
+	background:url('/images/request_quote_footer.jpg') no-repeat left top;
+}
+
+.footer_quote span {
+	visibility:hidden;
+	text-decoration:none;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearright {
+    clear:right;
+}
+
+#sebastian {
+	display: block;
+	width: 207px;
+	height:400px;
+	margin: 10px;
+	padding-left: 30px;
+	}
+
+/* Creates the Green rollover buttons*/
+a.greenButton:link, a.greenButton:active, a.greenButton:visited {
+    background-position: 0px 0px;
+    padding: 0px 12px 0px 12px;
+    margin: 0px 5px 0px 0px;
+    background-image: url('/images/btn_green.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-right-color: #DADADA;
+    border-bottom-color: #DADADA;
+}
+
+a.greenButton:hover {
+    background-position: 0px -22px;
+    background-image: url('/images/btn_green.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+/* creates the blue rollover buttons*/
+a.blueButton:link, a.blueButton:active, a.blueButton:visited {
+    background-position: 0px 0px;
+    padding: 3px 12px 3px 12px;
+    margin: 0px 5px 0px 0px;
+    background-image: url('/images/btn_blue.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-right-color: #DADADA;
+    border-bottom-color: #DADADA;
+}
+
+a.blueButton:hover {
+    background-position: 0px -22px;
+    background-image: url('/images/btn_blue.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+/* Create the zoom button & rollover */
+a.zoom:link{
+	background-image: url(/images/zoom.gif);
+	background-position: 0px 0px;
+	display: block;
+	float: right;
+	height: 26px;
+	width: 25px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+a.zoom:hover {
+	background-image: url(/images/zoom.gif);
+	background-position: 0px -27px;
+	display: block;
+	float: right;
+	height: 26px;
+	width: 25px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+/*Create the request quote button & rollover */
+a.requestQuote:link {
+	background-image: url(/images/request_quote_configs.gif);
+	background-position: 0px 0px;
+	text-align:center;
+	display: block;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: -5px;
+	margin-left: auto;
+	padding: 0px;
+}
+
+a.requestQuote:hover {
+	background-image: url(/images/request_quote_configs.gif);
+	background-position: 0px -20px;
+}
+
+
+
+/*Adjusting the request quote link for smaller div's*/
+/* done like this so we don't have to create new graphics */
+#slidingPanel .configurations_2x5_Grid div a.requestQuote:link {
+	background-image: url(/images/request_quote_configs.gif);
+	background-position: -20px 0px;
+	text-align:center;
+	display: block;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: -5px;
+	margin-left: auto;
+	padding: 0px;
+}
+
+#slidingPanel .configurations_2x5_Grid div a.requestQuote:hover {
+	background-image: url(/images/request_quote_configs.gif);
+	background-position: -20px -20px;
+}
+
+
+
+
+
+/* Page titles & sub-page titles */
+li.pageTitle {
+    color: #305D56;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    height: 20px;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 12px;
+    width: 200px;
+}
+
+li.pageSubTitle {
+	color:#00243A;
+	display:block;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	height:20px;
+	width: 180px;
+	margin:0px;
+	padding:12px 20px 0px 0px;
+}
+
+/* Secondary, or sub-navigation tabs */
+.subTabPanelWrapper {
+	background-color:#CAE3DE;
+	border-bottom:1px solid #A8D1C9;
+	border-style:none none solid;
+	display:block;
+	height:34px;
+	margin:0px 0px 0px -12px;
+	padding:12px 12px 0px 25px;
+	width:763px;
+}
+
+.subTabPanel {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0pt;
+	padding:0pt;
+}
+
+.subTabPanel li {
+	float:left;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+.subTabPanel li a:link, .subTabPanel li a:active, .subTabPanel li a:visited {
+	background-attachment:scroll;
+	background-image:url(/images/subTabNav_normal01.gif);
+	background-position:center top;
+	background-repeat:repeat-x;
+	border-left:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-style:solid solid none;
+	border-top:1px solid #FFFFFF;
+	color:#405B6B;
+	display:block;
+	height:23px;
+	margin:0px;
+	padding:10px 0px 0px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	width:120px;
+}
+
+.subTabPanel a#selected {
+	background-attachment:scroll;
+	background-image:url(/images/subTabNav_selected01.gif);
+	background-position:center top;
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.subTabPanel li a:hover {
+	background-attachment:scroll;
+	background-image:url(/images/subTabNav_over01.gif);
+	background-position:center top;
+	background-repeat:repeat-x;
+	color:#00243A;
+}
+
+table#priceListTable {
+	/* This margin on the other hand WILL BE SEEN by IE 6 & therefore used when rendering the slidingPanel box. Yeah as well:) */;
+    margin-left /**/: 90px !important; 
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+/* Classes & ID's to style the price list */
+td.rowBlue 	{
+    background-color: #E5F1EF;
+	font-size: 12px;
+	color: #00243A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+
+td.rowWhite 	{
+    background-color: #FFFFFF;
+	font-size: 12px;
+	color: #00243A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+
+.returnLink {
+    font-size: 10px;
+    font-weight: normal;
+    color: #00243A;
+    text-decoration: underline;
+}
+
+td.subHeading 	{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #E5E9EB;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #97AEAA;
+	color: #00243A;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+td.tableHeading {
+    border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #97AEAA;
+	border-bottom-color: #97AEAA;
+	padding: 10px;
+	background-color: #CAE3DE;
+	font-size: 17px;
+	color: #305D56;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#contentWrapper {
+    padding: 25px 120px 15px 15px;
+}
+
+#contentWrapper img {
+    display: inline-block;
+    float: left;
+    padding: 0px 7px 0px 0px;
+}
+
+#contentWrapper p a, #contentWrapper li a, #header a, a.outgoing:link, a.outgoing:active, a.outgoing:visited {
+    color: #183546;
+    text-decoration: underline;
+}
+
+a.outgoing:hover {
+    color: #0F0F1E;
+}
+
+#lastRow {	
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #97AEAA;
+}
+
+/* Classed to do simple things; clears, bolds, color changes */
+h4 {
+	font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 18px;
+    display: inline;
+}
+
+
+/* Format the form boxes & elements */
+dl {
+  position: relative;
+  width: 550px;
+}
+
+dt {
+    clear: both;
+    float: left;
+    width: 130px;
+    padding: 4px 0 10px 0;
+    text-align: right;
+}
+
+dd {
+  float: left;
+  width: 400px;
+  margin: 0 0 8px 0;
+  padding-left: 6px;
+}
+
+/* Format the form elements */
+select {
+    width: 200px;
+}
+
+dd#statesField select {
+    
+}
+
+fieldset {
+    border: 1px solid #DBDFF9;
+    padding: 0px;
+    margin: 20px 0px 10px 20px;
+    width: 700px;
+    background-color: #EFF1FC;
+    display: block;
+}
+
+fieldset span.formSubhead {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #305D56;
+    padding-top: 5px;
+    display: block;
+    padding-left: 10px;
+}
+
+/*   */
+/*   */
+/* QuickShip formatting */
+/*   */
+/*   */
+
+.quickShip {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    width: 780px;
+	clear: both;
+}
+
+.quickShip#quickShipTitle {
+    border-style: none none solid none;
+    padding: 6px 0px 8px 0px;
+    margin: 0px 0px 5px 0px;
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom-width: 1px;
+    border-bottom-color: #B7D9D2;
+}
+
+.quickShip#quickShipTitle a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #00245D;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.quickShip div {
+    margin: 4px 4px 6px 0px;
+    width: 140px;
+    background-color: #CBE3DF;
+    border: 5px solid #CBE3DF;
+    display: block;
+    float: left;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+
+.quickShip div#quickShipFabrics {
+    border-style: none;
+    padding: 3px 0px 5px 5px;
+    margin: 0px 5px 0px 0px;
+    width: 299px;
+    background-color: #CBE3DF;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: url('/images/navGradient01.gif');
+    background-repeat: repeat-x;
+}
+.quickShip div#quickShipLaminates {
+    border-style: none;
+    padding: 3px 0px 5px 5px;
+    margin: 0px 50px 0px 0px;
+    width: 297px;
+    background-color: #CBE3DF;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: url('/images/navGradient01.gif');
+    background-repeat: repeat-x;
+}
+
+/* apply this class by creating a div container around the image,
+and then giving it this class. Will clip the image, so we won't
+need another set of smaller images */
+
+.quickShip div.quickShipImageClip {
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    border-style: none;
+    display: block;
+    clip: rect(0px, 137px, 100px, 0px);
+    overflow: hidden;
+    height: 100px;
+}
+
+
+/*   */
+/*   */
+/* LIfe Cubed Formatting
+/*   */
+/*   */
+
+.lifeCubedEntry {
+    border-style: solid none solid none;
+    padding: 10px 30px 10px 20px;
+    margin: 5px 10px 5px 0px;
+    display: block;
+    float: left;
+    border-top-width: 1px;
+    border-top-color: #CAE3DE;
+    background-image: url('/images/BuyersGuide_Gradient_lightBlue.gif');
+    background-repeat: repeat-x;
+    border-bottom-width: 3px;
+    border-bottom-color: #CAE3DE;
+    width: 500px;
+}
+
+.lifeCubedEntry .controlsBox {
+    border: 6px solid #CAE3DE;
+    display: block;
+    float: left;
+    width: 365px;
+    height: inherit;
+    position: relative;
+    background-color: #CAE3DE;
+}
+
+.lifeCubedEntry .controlsBox .thumbImage {
+    padding: 0px 0px 5px 0px;
+    display: block;
+}
+
+.leftCol {
+    padding: 0px;
+    margin: 5px 5px 0px 0px;
+    display: block;
+    float: left;
+    width: 580px;
+    clear: both;
+}
+
+#sideNavContainer {
+    padding: 0px;
+    margin: 0px 5px 0px 5px;
+    width: 180px;
+    height: 400px;
+    display: block;
+    clear: none;
+    float: left;
+}
+
+#sideNavContainer ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#sideNavContainer ul li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#sideNavContainer ul li a:link, #sideNavContainer ul li a:active, #sideNavContainer ul li a:visited {
+    padding: 7px 5px 7px 20px;
+    margin: 1px 0px 0px 0px;
+    display: block;
+    background-image: url('/images/subTabNav_normal01.gif');
+    text-decoration: none;
+    color: #405B6B;
+}
+
+#sideNavContainer ul li a:hover {
+    background-image: url('/images/subTabNav_over01.gif');
+    text-decoration: none;
+    color: #00243A;
+}
+
+#sideNavContainer ul li#sideNavSubHead {
+    padding: 7px 0px 7px 10px;
+    color: #00243A;
+    border-style: none none solid none;
+    border-bottom-width: 1px;
+    border-bottom-color: #8DBBEF;
+    background-image: url('/images/navGradient01.gif');
+    display: block;
+    margin-top: 5px;
+}
+
+
+/*   */
+/*   */
+/* Tooltip Content */
+/*   */
+/*   */
+
+/* Assigns special class to anchor links to initialize tool tip function */
+a.myToolTip {
+	z-index:10;
+	width: 400px;
+	}	
+a.myToolTip:hover{
+	position:relative;
+	z-index:100;
+	}
+/* Sets the initial display of the tooltip content to none, so the browser won't render it */				
+a.myToolTip span{
+	display:none;
+	}
+/* When the mouse is hovered over the anchor link, sets the visible of the tool tip content to visible, and positions it */
+a.myToolTip:hover span{
+	position:absolute;
+	top:-2.2em;
+	left:.5em;
+	display:block;
+	float:left;
+    padding: 12px;
+	border:1px solid  #66FFCC;
+    width: 300px;
+    background-color: #FFFFFF;
+    background-image: url('/images/BuyersGuide_Gradient_lightBlue.gif');
+	font-style:normal;
+	font-size:11px;
+	line-height: 17px;
+	color: #305D56;
+	z-index:10;			
+	}
+
+/* ID's for tool tip links, incase special formatting needs are called upon */	
+#quickShip_Tip {
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-right: 300px;
+	padding-bottom: 15px;
+}
+
+
+
+/*   */
+/*   */
+/* Styles for the Home page */
+/*   */
+/*   */
+
+/* Styles the banner heading box for the home page */
+#mainBar #homeBannerBox {
+    background: #FFFFFF url('/images/home_Banner01.gif') no-repeat left center;
+    padding: 0px;
+    margin: 0px -20px 0px -12px;
+    width: 800px;
+    height: 336px;
+}
+
+#mainBar #homeBannerBox span {
+	display: none;
+}
+
+/* Classed to style the different sub-boxes on the home page */
+#mainBar .homeSubBox_A {
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+    height: 205px;
+    display: block;
+    float: left;
+}
+
+/* Classe for the dark blue background */
+#mainBar .homeSubBox_B {
+    border-top: 4px solid #B8E1D9;
+    background-position: left top;
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+    width: 320px;
+    background-image: url('/images/home_Gradient01.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    height: 205px;
+    display: inline-block;
+    float: left;
+}
+
+/* Classe for the light blue background */
+#mainBar .homeSubBox_C {
+    border-top: 4px solid #A8BBC9;
+    background-position: left top;
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+    width: 320px;
+    background-image: url('/images/home_Gradient02.gif');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    height: 205px;
+    display: block;
+    float: left;
+}
+
+
+/* LEFT COLUMN: setup like this to quickly control the width of the different elements*/
+#mainBar #subBoxA_Left, #mainBar #subBoxB_Left, #mainBar #subBoxC_Left {
+    width: 385px;
+}
+
+/* Right COLUMN: setup like this to quickly control the width of the different elements*/
+#mainBar #subBoxA_Right, #mainBar #subBoxB_Right, #mainBar #subBoxC_Right {
+    width: 350px;
+    padding-top: 10px;
+}
+#homeBannerBox #introPara
+{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+#header #quickShipBtn
+{
+    padding: 1px 15px 0px 0px;
+    display: block;
+    margin: 0;
+    float: right;
+    clear: none;
+}
+/* End Styles for the Home page */
+
