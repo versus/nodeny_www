@@ -2940,3 +2940,28 @@ Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:33:18) [GET]
 Rendering template within layouts/main
 Rendering main/changelog
 Completed in 120ms (View: 117, DB: 1) | 200 OK [http://127.0.0.1/changelog]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-15 17:36:12) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#policy (for 127.0.0.1 at 2010-01-15 17:36:15) [GET]
+Rendering template within layouts/main
+Rendering main/policy
+Completed in 46ms (View: 42, DB: 0) | 200 OK [http://127.0.0.1/policy]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-15 17:36:17) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/sale]
