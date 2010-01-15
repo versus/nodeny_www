@@ -29,19 +29,12 @@
 		
 		    <div id="logoBox"><a href="/" title="Nodeny - домашняя сеть это просто " ><img src="/images/Nodeny_logo.gif" 
 		    width="347" height="41" alt="NoDeny Logo" title="Nodeny - создай свою домашнюю сеть" border="0" /></a></div>	
-            <div style="float:right; margin-right:30px;margin-top:30px;"> <a href="#" id='contact-click'><h2>Наши контакты</h2></a></div>
-                <div id="contact-box" style="padding:20px;border:1px solid #000;z-index:99;background:#fff;top:55px;left:65%;overflow:hidden; display:none;position: absolute; width:350px; height:300px;float:right;">
-                    <a href="#" style="float:right" id='contact-close'>закрыть</a><br/>  
-                    <h1>Валентин</h1>
-                    <h3>+380 (97) 9102264 Киевстар</h3>
-                    <h3>+380 (66) 3367540 МТС</h3>
-                    <h3>+380 (93) 8160928 Life:)</h3>
-                    <h3>+380 (68) 4149945 Beeline</h3><br/>
-                    <h2> icq: 44306843 </h2><br/>
-                    <h2>skype: versus.ua </h2>
-                    <br/>
-            <h2> email:  versus.ua@gmail.com</h2>
-        </div>
+            <div id="contactBox">
+                <h2>тел: +380 (97) 9102264 (Валентин)</h2>
+                <h4 style="margin:15px;"><img src="/images/skype.png" />&nbsp; 
+                <a href="http://www.skype.com/intl/ru/" target=_blank>skype</a>: versus.ua <br/>
+                <img src="/images/gmail.gif"> <a href="http://www.google.com/talk/intl/ru/" target="_blank">gtalk</a>/email:  versus.ua@gmail.com</h4>
+            </div>
 		</div>
 		<div id="navBar" class="clearfix">
 			<a href="/detail" title="Посмотреть описание программы">Описание</a>
@@ -95,15 +88,5 @@
         
 		</div>
 <div align="center" style="color:white">&copy;&nbsp;Все авторские права на программный комплекс "NoDeny" принадлежат Волик С.Б.</div>
-<script>
-    $(document).ready(function() {
-        $('#contact-click').click(function(){
-            $('#contact-box').show('slow');
-        });
-        $('#contact-close').click(function(){
-            $('#contact-box').hide('slow');
-        });
-})
- </script>
 </body>
 </html>
