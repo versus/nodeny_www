@@ -2865,3 +2865,68 @@ Processing MainController#index (for 127.0.0.1 at 2010-01-15 14:38:51) [GET]
 Rendering template within layouts/main
 Rendering main/index
 Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-15 16:59:51) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 42ms (View: 39, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-15 16:59:58) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:01:36) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 91ms (View: 87, DB: 1) | 200 OK [http://127.0.0.1/changelog]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:03:08) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/changelog]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:04:26) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/changelog]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:06:23) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/changelog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:07:16) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://127.0.0.1/changelog]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#changelog (for 127.0.0.1 at 2010-01-15 17:07:59) [GET]
+Rendering template within layouts/main
+Rendering main/changelog
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/changelog]
