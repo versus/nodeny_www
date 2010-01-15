@@ -2965,3 +2965,76 @@ Processing MainController#sale (for 127.0.0.1 at 2010-01-15 17:36:17) [GET]
 Rendering template within layouts/main
 Rendering main/sale
 Completed in 24ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/sale]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-15 17:50:19) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 43ms (View: 40, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PriceController#index (for 127.0.0.1 at 2010-01-15 17:50:33) [GET]
+Rendering template within layouts/main
+Rendering price/index
+Completed in 44ms (View: 41, DB: 0) | 200 OK [http://127.0.0.1/price]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PriceController#index (for 127.0.0.1 at 2010-01-15 17:51:03) [GET]
+Rendering template within layouts/main
+Rendering price/index
+Completed in 26ms (View: 23, DB: 2) | 200 OK [http://127.0.0.1/price]
+  [4;36;1mSQL (10.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PriceController#index (for 127.0.0.1 at 2010-01-15 17:51:37) [GET]
+Rendering template within layouts/main
+Rendering price/index
+Completed in 25ms (View: 21, DB: 11) | 200 OK [http://127.0.0.1/price]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-15 17:54:44) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 86ms (View: 27, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#demo (for 127.0.0.1 at 2010-01-15 17:54:50) [GET]
+Rendering template within layouts/main
+Rendering main/demo
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://127.0.0.1/demo]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#demo (for 127.0.0.1 at 2010-01-15 17:55:55) [GET]
+Rendering template within layouts/main
+Rendering main/demo
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://127.0.0.1/demo]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#demo (for 127.0.0.1 at 2010-01-15 17:56:11) [GET]
+Rendering template within layouts/main
+Rendering main/demo
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/demo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#demo (for 127.0.0.1 at 2010-01-15 17:56:31) [GET]
+Rendering template within layouts/main
+Rendering main/demo
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/demo]
