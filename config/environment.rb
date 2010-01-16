@@ -10,7 +10,7 @@ Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
-  config.logger = Logger.new("#{RAILS_ROOT}/log/#{RAILS_ENV}.log", 50, 1.megabyte)
+  config.logger = Logger.new("#{RAILS_ROOT}/log/#{RAILS_ENV}.log", 50, 1048576)
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
