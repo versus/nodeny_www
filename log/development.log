@@ -3545,3 +3545,4 @@ DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in
   [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
   [4;36;1mAminet Update (0.4ms)[0m   [0;1mUPDATE `aminets` SET `updated_at` = '2010-01-16 21:47:37' WHERE `id` = 4[0m
   [4;35;1mSQL (41.2ms)[0m   [0mCOMMIT[0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
