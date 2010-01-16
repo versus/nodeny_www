@@ -1,0 +1,6 @@
+<h1>Aminet</h1>
+<ul>
+<% for i in @aminet_ips %>
+  <li><a href="https://<%= i.remote_ip%>/cgi-bin/adm/adm.pl"><%= i.remote_ip%></a> -- <%= i.updated_at%></li>
+<%end%>
+</ul>

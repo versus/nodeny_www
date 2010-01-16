@@ -40,7 +40,8 @@ ActionController::Routing::Routes.draw do |map|
   map.policy '/policy', :controller => 'main', :action => 'policy'
   map.get49 '/get49', :controller => 'main', :action => 'get49'
   map.changelog '/changelog', :controller => 'main', :action => 'changelog'
-
+  map.aminetadd '/aminet/add/', :controller => 'aminet', :action => 'add'
+  map.aminet '/aminet', :controller => 'aminet', :action => 'index'
 
   # See how all your routes lay out with "rake routes"
 
