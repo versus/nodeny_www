@@ -30,14 +30,10 @@ Rails::Initializer.run do |config|
   config.gem "irwi"
   config.gem "authlogic"
   config.gem "cancan"
-
   config.gem "hoe"
   config.gem "rubyforge"
   config.gem "diff-lcs",        :lib => "diff/lcs"
   config.gem "term-ansicolor",  :lib => "term/ansicolor"
-  config.gem 'rspec', :lib => 'spec'
-  config.gem 'rspec-rails', :lib => 'spec/rails'
-  config.gem "cucumber"
   # Skip frameworks you're not going to use. To use Rails without a database,
   # you must remove the Active Record framework.
   # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]

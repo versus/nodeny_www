@@ -6,7 +6,7 @@ development:
   password: nodeny33
   encoding: utf8
 
-test:
+test: &TEST
   adapter: mysql
   database: nodeny_test
   username: nodeny
@@ -22,3 +22,6 @@ production:
   username: nodeny
   password: nodeny33
 
+
+cucumber:
+  <<: *TEST
