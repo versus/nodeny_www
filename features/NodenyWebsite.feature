@@ -64,4 +64,13 @@ Feature: view pages
         Then I should see "icq: 44306843"
             And I should see "+380 (97) 9102264 Киевстар"
 
-    
+    Scenario: show invoice link
+        Given I am on the home page
+        When I follow "Кyпить!"
+        Then I should see "Выписать счет"
+    Scenario: show invoice form
+        Given I am on the home page
+        When I follow "Кyпить!"
+        And I follow "Выписать счет"
+        Then I should see "Cчет на покупку"
+

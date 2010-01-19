@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  network_name: MyString
+  fio: MyText
+  email: MyString
+  count_user: 1
+  city: MyString
+
+two:
+  network_name: MyString
+  fio: MyText
+  email: MyString
+  count_user: 1
+  city: MyString
