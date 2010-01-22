@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.demo '/demo', :controller => 'main', :action => 'demo'
   map.arhitectura '/arhitectura', :controller => 'main', :action =>'arhitectura'
   map.sale '/sale', :controller => 'main', :action =>'sale'
-  map.price '/price', :controller => 'price', :action =>'index'
+  map.price '/price', :controller => 'prices', :action =>'index'
   map.detail '/detail', :controller => 'main', :action => 'detail'
   map.gallery '/gallery', :controller => 'main', :action => 'gallery'
   map.policy '/policy', :controller => 'main', :action => 'policy'

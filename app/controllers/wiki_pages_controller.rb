@@ -7,11 +7,11 @@ class WikiPagesController < ApplicationController
   end
   
   def history_allowed?
-    false # И историю пусть все смотрят
+    true # И историю пусть все смотрят
   end
   
   def edit_allowed?
-    false # А редактируют только те, кто залогинены
+    true # А редактируют только те, кто залогинены
   end
   
   def not_allowed
