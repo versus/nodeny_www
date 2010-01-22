@@ -1,7 +1,10 @@
 class InvoicesController < ApplicationController
+  layout 'main'
+  
+  def index
+  end
 
-  def show
-    @invoice=Invoice.find_by_permalink(params[:id])
+  def edit
   end
 
   def new
@@ -9,12 +12,5 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    @invoice = Invoice.new(params[:invoice])
-    if @invoice.save
-      redirect_to invoice_path(@invoice)
-    else
-      render :action => 'new'
-    end
   end
-
 end

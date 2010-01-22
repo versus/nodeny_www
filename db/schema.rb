@@ -9,10 +9,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100116212740) do
+ActiveRecord::Schema.define(:version => 20100118153033) do
 
   create_table "aminets", :force => true do |t|
     t.string   "remote_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "invoices", :force => true do |t|
+    t.string   "network_name"
+    t.text     "fio"
+    t.string   "email"
+    t.integer  "count_user"
+    t.string   "city"
+    t.string   "country"
+    t.string   "permalink"
+    t.string   "phone"
+    t.integer  "summa",        :limit => 10, :precision => 10, :scale => 0
+    t.text     "comment"
+    t.text     "rekvizity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

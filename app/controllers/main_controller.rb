@@ -13,6 +13,9 @@ class MainController < ApplicationController
   end
   def arhitectura
   end
+  def forum
+    redirect_to "http://forum.nodeny.com.ua"
+  end
   def changelog
   end
   def gallery

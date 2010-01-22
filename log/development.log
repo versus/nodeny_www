@@ -4108,3 +4108,415 @@ Processing MainController#sale (for 127.0.0.1 at 2010-01-22 14:58:11) [GET]
 Rendering template within layouts/main
 Rendering main/sale
 Completed in 18ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/sale]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 15:07:29) [GET]
+
+ActionController::RoutingError (No route matches "/invoice" with {:method=>:get}):
+  
+
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 15:11:23) [GET]
+
+ActionController::RoutingError (No route matches "/invoice" with {:method=>:get}):
+  
+
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-22 15:12:24) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:12:27) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/sale]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 15:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/invoice" with {:method=>:get}):
+  
+
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-01-22 15:15:18) [GET]
+Rendering template within layouts/main
+Rendering main/index
+Completed in 12ms (View: 3, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:15:20) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://127.0.0.1/sale]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#index (for 127.0.0.1 at 2010-01-22 15:15:23) [GET]
+Rendering invoices/index
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/invoices]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:15:49) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+
+ActionView::TemplateError (undefined local variable or method `new_invoices_path' for #<ActionView::Base:0xb6fa1ebc>) on line #19 of app/views/main/sale.html.erb:
+16: <ul>
+17:   <li class="ssmenu"><h3><a href="#req">Реквизиты для оплаты</a></h3></li>
+18:   <li class="ssmenu"><h3><a href="#ofpred">Офицальные представители</a></h3></li>  
+19:   <li class="ssmenu"><h3><%= link_to 'Выписать счет', new_invoices_path %>
+20:   </h3></li>
+21: </ul><br/>
+22: <fieldset style="padding:10px;">      
+
+    app/views/main/sale.html.erb:19
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (62.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:16:04) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+
+ActionView::TemplateError (undefined local variable or method `invoices_new_path' for #<ActionView::Base:0xb6d0f2bc>) on line #19 of app/views/main/sale.html.erb:
+16: <ul>
+17:   <li class="ssmenu"><h3><a href="#req">Реквизиты для оплаты</a></h3></li>
+18:   <li class="ssmenu"><h3><a href="#ofpred">Офицальные представители</a></h3></li>  
+19:   <li class="ssmenu"><h3><%= link_to 'Выписать счет', invoices_new_path %>
+20:   </h3></li>
+21: </ul><br/>
+22: <fieldset style="padding:10px;">      
+
+    app/views/main/sale.html.erb:19
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:19:06) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/sale]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:19:08) [GET]
+Rendering invoices/new
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:23:50) [GET]
+
+NoMethodError (undefined method `main' for #<InvoicesController:0xb6fc8440>):
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (57.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:24:27) [GET]
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 9ms (View: 5, DB: 4) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PricesController#index (for 127.0.0.1 at 2010-01-22 15:33:37) [GET]
+Rendering template within layouts/main
+Rendering prices/index
+Completed in 131ms (View: 128, DB: 0) | 200 OK [http://127.0.0.1/price]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#forum (for 127.0.0.1 at 2010-01-22 15:39:53) [GET]
+Redirected to http://forum.nodeny.com.ua
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/forum]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#forum (for 127.0.0.1 at 2010-01-22 15:42:23) [GET]
+Redirected to http://forum.nodeny.com.ua
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/forum]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 15:42:35) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/sale]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:42:38) [GET]
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:45:26) [GET]
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:46:01) [GET]
+Rendering invoices/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 15:47:53) [GET]
+Rendering invoices/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://127.0.0.1/invoices/new]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvoice Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'nodeny.invoices' doesn't exist: SHOW FIELDS FROM `invoices`[0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePrices (20100113154709)
+Migrating to CreateAminets (20100116193536)
+Migrating to CreateWikiPages (20100116212740)
+Migrating to CreateInvoices (20100118153033)
+  [4;36;1mSQL (168.1ms)[0m   [0;1mCREATE TABLE `invoices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `network_name` varchar(255), `fio` text, `email` varchar(255), `count_user` int(11), `city` varchar(255), `country` varchar(255), `permalink` varchar(255), `phone` varchar(255), `summa` decimal, `comment` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118153033')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `aminets`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `aminets`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `aminets`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `invoices`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `invoices`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `prices`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `prices`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `prices`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `wiki_page_versions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `wiki_pages`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `wiki_pages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `wiki_pages`[0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvoice Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (127.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (215.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePrices (20100113154709)
+  [4;35;1mSQL (122.8ms)[0m   [0mCREATE TABLE `prices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (37.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100113154709')[0m
+Migrating to CreateAminets (20100116193536)
+  [4;35;1mSQL (113.8ms)[0m   [0mCREATE TABLE `aminets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `remote_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (32.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100116193536')[0m
+Migrating to CreateWikiPages (20100116212740)
+  [4;35;1mSQL (114.1ms)[0m   [0mCREATE TABLE `wiki_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `creator_id` int(11), `updator_id` int(11), `path` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (213.2ms)[0m   [0;1mCREATE INDEX `index_wiki_pages_on_creator_id` ON `wiki_pages` (`creator_id`)[0m
+  [4;35;1mSQL (235.3ms)[0m   [0mCREATE UNIQUE INDEX `index_wiki_pages_on_path` ON `wiki_pages` (`path`)[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mCREATE TABLE `wiki_page_versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11) NOT NULL, `updator_id` int(11), `number` int(11), `comment` varchar(255), `path` varchar(255), `title` varchar(255), `content` text, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (413.5ms)[0m   [0mCREATE INDEX `index_wiki_page_versions_on_page_id` ON `wiki_page_versions` (`page_id`)[0m
+  [4;36;1mSQL (201.9ms)[0m   [0;1mCREATE INDEX `index_wiki_page_versions_on_updator_id` ON `wiki_page_versions` (`updator_id`)[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100116212740')[0m
+Migrating to CreateInvoices (20100118153033)
+  [4;36;1mSQL (96.4ms)[0m   [0;1mCREATE TABLE `invoices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `network_name` varchar(255), `fio` text, `email` varchar(255), `count_user` int(11), `city` varchar(255), `country` varchar(255), `permalink` varchar(255), `phone` varchar(255), `summa` decimal, `comment` text, `rekvizity` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100118153033')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `aminets`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `aminets`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `aminets`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `invoices`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `invoices`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `prices`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `prices`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `prices`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `wiki_page_versions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `wiki_pages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `wiki_pages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `wiki_pages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:04:56) [GET]
+  [4;36;1mInvoice Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 30ms (View: 13, DB: 7) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;35;1mSQL (16.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:06:20) [GET]
+  [4;35;1mInvoice Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 24ms (View: 13, DB: 20) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:06:21) [GET]
+  [4;36;1mInvoice Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 19ms (View: 5, DB: 2) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 16:07:20) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/sale]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:07:27) [GET]
+  [4;35;1mInvoice Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 16ms (View: 5, DB: 2) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#sale (for 127.0.0.1 at 2010-01-22 16:07:52) [GET]
+Rendering template within layouts/main
+Rendering main/sale
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/sale]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `aminets`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `aminets`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `aminets`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `invoices`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `invoices`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `prices`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `prices`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `prices`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `wiki_page_versions`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `wiki_page_versions`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `wiki_pages`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `wiki_pages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `wiki_pages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (273.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `nodeny_test`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE DATABASE `nodeny_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (87.7ms)[0m   [0mCREATE TABLE `aminets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `remote_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (85.3ms)[0m   [0mCREATE TABLE `invoices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `network_name` varchar(255), `fio` text, `email` varchar(255), `count_user` int(11), `city` varchar(255), `country` varchar(255), `permalink` varchar(255), `phone` varchar(255), `summa` integer, `comment` text, `rekvizity` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (87.6ms)[0m   [0mCREATE TABLE `prices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (86.2ms)[0m   [0mCREATE TABLE `wiki_page_versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11) NOT NULL, `updator_id` int(11), `number` int(11), `comment` varchar(255), `path` varchar(255), `title` varchar(255), `content` text, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (236.8ms)[0m   [0;1mCREATE INDEX `index_wiki_page_versions_on_page_id` ON `wiki_page_versions` (`page_id`)[0m
+  [4;35;1mSQL (223.8ms)[0m   [0mCREATE INDEX `index_wiki_page_versions_on_updator_id` ON `wiki_page_versions` (`updator_id`)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (75.1ms)[0m   [0mCREATE TABLE `wiki_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `creator_id` int(11), `updator_id` int(11), `path` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (179.6ms)[0m   [0;1mCREATE INDEX `index_wiki_pages_on_creator_id` ON `wiki_pages` (`creator_id`)[0m
+  [4;35;1mSQL (190.6ms)[0m   [0mCREATE UNIQUE INDEX `index_wiki_pages_on_path` ON `wiki_pages` (`path`)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (89.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (302.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (41.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100118153033')[0m
+  [4;36;1mSQL (44.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100116193536')[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100116212740')[0m
+  [4;36;1mSQL (44.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100113154709')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:10:59) [GET]
+  [4;36;1mInvoice Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 21ms (View: 5, DB: 4) | 200 OK [http://127.0.0.1/invoices/new]

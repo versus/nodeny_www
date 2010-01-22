@@ -68,9 +68,9 @@ Feature: view pages
         Given I am on the home page
         When I follow "Кyпить!"
         Then I should see "Выписать счет"
+
     Scenario: show invoice form
-        Given I am on the home page
-        When I follow "Кyпить!"
-        And I follow "Выписать счет"
-        Then I should see "Cчет на покупку"
+        Given I am on the sale page
+        When I follow "Выписать счет"
+        Then I should see "Счет на покупку"
 

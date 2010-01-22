@@ -12,6 +12,9 @@ ActionController::Routing::Routes.draw do |map|
   map.aminetadd '/aminet/add/', :controller => 'aminet', :action => 'add'
   map.aminet '/aminet', :controller => 'aminet', :action => 'index'
   map.wiki_root '/docs'
+  map.forum '/forum', :controller => 'main', :action => 'forum'
+
+  map.resources :invoices
   # The priority is based upon order of creation: first created -> highest priority.
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'

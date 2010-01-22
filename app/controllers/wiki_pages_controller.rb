@@ -4,7 +4,7 @@ class WikiPagesController < ApplicationController
   
   def show_allowed?
     true # Показывать всем
-  end
+  end 
   
   def history_allowed?
     true # И историю пусть все смотрят

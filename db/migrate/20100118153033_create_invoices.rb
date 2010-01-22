@@ -6,7 +6,12 @@ class CreateInvoices < ActiveRecord::Migration
       t.string :email
       t.integer :count_user
       t.string :city
+      t.string :country
       t.string :permalink
+      t.string :phone
+      t.decimal :summa
+      t.text :comment      
+      t.text :rekvizity
       t.timestamps
     end
   end
