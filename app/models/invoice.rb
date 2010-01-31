@@ -1,14 +1,18 @@
 class Invoice < ActiveRecord::Base
   before_validation_on_create :generate_permalink
-
+  
+  validates_presence_of :permalink, :fio, :email,:count_user, :network_name,:summa
+  validates_numericality_of :summa, :count_user
+  
+  
   def to_param
     permalink
   end
 
-  private
+  protected
   def generate_permalink
     string = random_string
-    while Foo.find_by_permalink(string)
+    while Invoice.find_by_permalink(string)
       string = random_string
     end
     self.permalink = string

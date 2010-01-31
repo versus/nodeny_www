@@ -4520,3 +4520,210 @@ Processing InvoicesController#new (for 127.0.0.1 at 2010-01-22 16:10:59) [GET]
 Rendering template within layouts/main
 Rendering invoices/new
 Completed in 21ms (View: 5, DB: 4) | 200 OK [http://127.0.0.1/invoices/new]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (17.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-23 22:58:39) [GET]
+  [4;36;1mInvoice Columns (37.8ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 260ms (View: 133, DB: 57) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 22:58:44) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>""}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+
+ActionView::MissingTemplate (Missing template invoices/create.erb in view path app/views:/usr/lib/ruby/gems/1.8/gems/irwi-0.1.11/app/views):
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#index (for 127.0.0.1 at 2010-01-23 23:00:44) [GET]
+Rendering template within layouts/main
+Rendering invoices/index
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/invoices]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#new (for 127.0.0.1 at 2010-01-23 23:00:52) [GET]
+  [4;35;1mInvoice Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+Rendering template within layouts/main
+Rendering invoices/new
+Completed in 31ms (View: 20, DB: 1) | 200 OK [http://127.0.0.1/invoices/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:00:57) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"123"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+
+ActionView::MissingTemplate (Missing template invoices/create.erb in view path app/views:/usr/lib/ruby/gems/1.8/gems/irwi-0.1.11/app/views):
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:01:15) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"123"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+
+ActionController::RoutingError (invoice_url failed to generate from {:controller=>"invoices", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["invoices", :id] - are they all satisfied?):
+  (eval):16:in `invoice_path'
+  app/controllers/invoices_controller.rb:16:in `create'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:02:29) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"123"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+
+ActionController::RoutingError (invoice_url failed to generate from {:controller=>"invoices", :id=>nil, :action=>"show"}, expected: {:controller=>"invoices", :action=>"show"}, diff: {:id=>nil}):
+  (eval):16:in `invoice_path'
+  app/controllers/invoices_controller.rb:20:in `create'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendering rescues/layout (not_found)
+  [4;35;1mInvoice Load (0.0ms)[0m   [0mMysql::Error: MySQL server has gone away: SELECT * FROM `invoices` [0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvoice Load (56.2ms)[0m   [0;1mSELECT * FROM `invoices` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:10:35) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"123"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+  [4;36;1mInvoice Columns (18.8ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mROLLBACK[0m
+
+NameError (uninitialized constant Invoice::Foo):
+  app/models/invoice.rb:11:in `generate_permalink'
+  app/controllers/invoices_controller.rb:21:in `create'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (164.5ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvoice Columns (7.5ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mInvoice Load (0.2ms)[0m   [0mSELECT * FROM `invoices` [0m
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mInvoice Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mInvoice Load (15.1ms)[0m   [0;1mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = 'N4k7zK5S') LIMIT 1[0m
+  [4;35;1mInvoice Create (16.7ms)[0m   [0mINSERT INTO `invoices` (`city`, `permalink`, `comment`, `rekvizity`, `fio`, `created_at`, `country`, `summa`, `updated_at`, `count_user`, `phone`, `network_name`, `email`) VALUES(NULL, 'N4k7zK5S', NULL, NULL, '123', '2010-01-23 21:13:12', NULL, NULL, '2010-01-23 21:13:12', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (69.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:13:32) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"123"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+  [4;35;1mInvoice Columns (29.3ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+  [4;36;1mSQL (25.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoice Load (18.9ms)[0m   [0mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = 'U6a9mRwp') LIMIT 1[0m
+  [4;36;1mInvoice Create (14.1ms)[0m   [0;1mINSERT INTO `invoices` (`city`, `permalink`, `comment`, `rekvizity`, `fio`, `created_at`, `country`, `summa`, `updated_at`, `count_user`, `phone`, `network_name`, `email`) VALUES(NULL, 'U6a9mRwp', NULL, NULL, '123', '2010-01-23 21:13:32', NULL, NULL, '2010-01-23 21:13:32', NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (91.0ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (undefined method `perlink' for #<Invoice:0xb6d9d3dc>):
+  app/controllers/invoices_controller.rb:23:in `create'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#create (for 127.0.0.1 at 2010-01-23 23:14:17) [POST]
+  Parameters: {"commit"=>"Save changes", "invoice"=>{"fio"=>"Master"}, "authenticity_token"=>"v0ZiQyDAsYeVFgoK+1vauOW3WFk3Lj8uFxJPfCScIew="}
+  [4;36;1mInvoice Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `invoices`[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mInvoice Load (1.0ms)[0m   [0;1mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = '9CynGHn9') LIMIT 1[0m
+  [4;35;1mInvoice Create (1.8ms)[0m   [0mINSERT INTO `invoices` (`city`, `permalink`, `comment`, `rekvizity`, `fio`, `created_at`, `country`, `summa`, `updated_at`, `count_user`, `phone`, `network_name`, `email`) VALUES(NULL, '9CynGHn9', NULL, NULL, 'Master', '2010-01-23 21:14:17', NULL, NULL, '2010-01-23 21:14:17', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/invoices/9CynGHn9
+Completed in 166ms (DB: 60) | 302 Found [http://127.0.0.1/invoices]
+  [4;35;1mSQL (11.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#show (for 127.0.0.1 at 2010-01-23 23:14:17) [GET]
+  Parameters: {"id"=>"9CynGHn9"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/invoices_controller.rb:11:in `show'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#show (for 127.0.0.1 at 2010-01-23 23:14:53) [GET]
+  Parameters: {"id"=>"9CynGHn9"}
+  [4;35;1mInvoice Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+  [4;36;1mInvoice Load (23.5ms)[0m   [0;1mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` IS NULL) LIMIT 1[0m
+
+NoMethodError (undefined method `permalink' for nil:NilClass):
+  app/controllers/invoices_controller.rb:12:in `show'
+  haml (2.2.17) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mInvoice Load (0.7ms)[0m   [0mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = 'N4k7zK5S') LIMIT 1[0m
+  [4;35;1mSQL (11.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (11.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#show (for 127.0.0.1 at 2010-01-23 23:16:24) [GET]
+  Parameters: {"id"=>"9CynGHn9"}
+  [4;35;1mInvoice Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+  [4;36;1mInvoice Load (0.7ms)[0m   [0;1mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = '9CynGHn9') LIMIT 1[0m
+Completed in 20ms (View: 1, DB: 25) | 200 OK [http://127.0.0.1/invoices/9CynGHn9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing InvoicesController#show (for 127.0.0.1 at 2010-01-23 23:16:50) [GET]
+  Parameters: {"id"=>"9CynGHn9"}
+  [4;35;1mInvoice Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `invoices`[0m
+  [4;36;1mInvoice Load (1.2ms)[0m   [0;1mSELECT * FROM `invoices` WHERE (`invoices`.`permalink` = '9CynGHn9') LIMIT 1[0m
+Completed in 17ms (View: 1, DB: 3) | 200 OK [http://127.0.0.1/invoices/9CynGHn9]
+DEPRECATION WARNING: require "activerecord" is deprecated and will be removed in Rails 3. Use require "active_record" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/activerecord.rb:2)

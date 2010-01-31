@@ -1,5 +1,11 @@
 <% content_for :top do %>
 Счет на покупку
 <%end%>
-<p>Заполните форму</p>
 
+<%form_for @invoice do |f|%>
+  <p>
+    <%= f.label :fio %>
+    <%= f.text_field :fio%>
+  </p>
+  <%= submit_tag %>
+<%end%>

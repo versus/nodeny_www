@@ -16,10 +16,12 @@
 <ul>
   <li class="ssmenu"><h3><a href="#req">Реквизиты для оплаты</a></h3></li>
   <li class="ssmenu"><h3><a href="#ofpred">Офицальные представители</a></h3></li>  
-  <li class="ssmenu"><h3><%= link_to 'Выписать счет', new_invoice_path %>
+  <!-- 
+      li class="ssmenu"><h3><%= link_to 'Выписать счет', new_invoice_path % 
+    -->
   </h3></li>
 </ul><br/>
-<fieldset style="padding:10px;">      
+<fieldset style="padding:10px;float:left;">      
 <div style="background-color: #FFF; margin:20px; border:1px #CCC dotted; padding:5px;">
   <h4 id='req'>Реквизиты для оплаты</h4>
 	<br/><p><b>Webmoney:</b><br>Z576099891659, R410683824470 </p>
@@ -40,7 +42,7 @@ Money transfer to card VISA
 </div>
 </div>  
 </fieldset> 
-<fieldset style="padding:10px;"> 
+<fieldset style="padding:10px;float:left;"> 
 	<div style="background-color: #FFF; margin:20px; border:1px #CCC dotted; padding:5px;">
 		<h4 align="center" id="ofpred">Офицальные представители</h4>
 		<ol>

@@ -69,6 +69,11 @@ Feature: view pages
         When I follow "Кyпить!"
         Then I should see "Выписать счет"
 
+    Scenario: show invoice page
+        Given I am on the sale page
+        When I follow "Выписать счет"
+        Then I should see "Счет на покупку"
+
     Scenario: show invoice form
         Given I am on the sale page
         When I follow "Выписать счет"
