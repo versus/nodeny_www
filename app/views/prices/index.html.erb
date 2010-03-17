@@ -80,8 +80,38 @@
             <td colspan="3" class="subHeading" id="listModul" title="Модули">
                 Дополнительные модули для биллинга 
             </td>
-        </tr>
-<tr>
+          </tr>
+          <tr>
+            <td colspan="3"><h3 style="cursor:pointer;" onclick="$('#form_addmod').toggle()">Добавить свой модуль на продажу</h3></td>
+          </tr>
+<tr id="form_addmod" style="display:none">
+  <td class="rowBlue" colspan="3">
+    <%form_for @price do |form|%>
+      <%= form.error_messages %>
+      <label for="author">Автор:</label>
+      <%= form.text_field :author, :size => 20 %>
+ <label for="contact">Контакт:</label>
+      <%= form.text_field :contact, :size => 20 %>
+      <br/>
+ <label for="price">Цена в долларах:</label>
+ <%= form.text_field :price, :size => 9 %><br/>
+ <label for="note">Описание:</label><br>
+ <%= form.text_area :note, :rows=>5, :cols=>60%><br/>
+<%= submit_tag "Добавить модуль" %>
+    <%end%>
+</td>
+</tr>
+
+        <% @pricelist.each do |mm| %>
+          <tr>
+            <td class="rowWhite">
+              <%= mm.note%><br/>
+              <small style="color:red">автор: <%=mm.author%>, контакт:<%=mm.contact%></small>
+            </td>
+            <td align="right" class="rowWhite"><%=mm.price%>$<br/><%=mm.price*8%> грн</td>
+          </tr>
+        <% end %>
+        <tr>
 	<td class="rowWhite">Модуль "Платежные терминалы" - : модуль работы с платежной системой <a href="http://osmp.com.ua" target="_blank">ОСМП</a> и  <a href="http://24nonstop.com.ua" target="_blank">24nonstop</a>. Обеспечение украинских потребителей современным, надежным и удобным спектром технологических решений платежного сервиса.<br/>
 <small style="color:red">автор:  Волик Станислав,  контакт: versus.ua@gmail.com.ua</small>
 </td>

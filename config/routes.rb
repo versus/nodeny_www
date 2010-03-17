@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.demo '/demo', :controller => 'main', :action => 'demo'
   map.arhitectura '/arhitectura', :controller => 'main', :action =>'arhitectura'
   map.sale '/sale', :controller => 'main', :action =>'sale'
-  map.price '/price', :controller => 'prices', :action =>'index'
+  #map.prices '/price', :controller => 'prices', :action =>'index'
   map.detail '/detail', :controller => 'main', :action => 'detail'
   map.gallery '/gallery', :controller => 'main', :action => 'gallery'
   map.policy '/policy', :controller => 'main', :action => 'policy'
@@ -15,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.forum '/forum', :controller => 'main', :action => 'forum'
 
   map.resources :invoices
+  map.resources :prices
   # The priority is based upon order of creation: first created -> highest priority.
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'

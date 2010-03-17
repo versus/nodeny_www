@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100118153033) do
+ActiveRecord::Schema.define(:version => 20100228120625) do
 
   create_table "aminets", :force => true do |t|
     t.string   "remote_ip"
@@ -36,6 +36,12 @@ ActiveRecord::Schema.define(:version => 20100118153033) do
   create_table "prices", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author"
+    t.text     "note"
+    t.string   "contact"
+    t.boolean  "accept",                                   :default => false
+    t.decimal  "price",      :precision => 8, :scale => 2
+    t.integer  "razdel",                                   :default => 0
   end
 
   create_table "wiki_page_versions", :force => true do |t|
