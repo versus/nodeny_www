@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20100228120625) do
     t.string   "country"
     t.string   "permalink"
     t.string   "phone"
-    t.integer  "summa",        :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "summa"
     t.text     "comment"
     t.text     "rekvizity"
     t.datetime "created_at"

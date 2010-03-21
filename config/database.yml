@@ -1,18 +1,19 @@
 development:
-  adapter: mysql
+  adapter: postgresql
+  encoding: unicode
   database: nodeny
-  hostname: localhost
-  username: nodeny
-  password: nodeny33
-  encoding: utf8
+  pool: 5
+  username: versus
+  password: 
 
 test: &TEST
-  adapter: mysql
+  adapter: postgresql
   database: nodeny_test
-  username: nodeny
+  username: versus
   hostname: localhost
-  encoding: utf8
-  password: nodeny33
+  encoding: unicode
+  password: 
+pool: 5
 
 production:
   adapter: mysql
