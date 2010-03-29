@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.sale '/sale', :controller => 'main', :action =>'sale'
   #map.prices '/price', :controller => 'prices', :action =>'index'
   map.detail '/detail', :controller => 'main', :action => 'detail'
+  map.detail '/license.txt', :controller => 'main', :action=>'policy'
   map.gallery '/gallery', :controller => 'main', :action => 'gallery'
   map.policy '/policy', :controller => 'main', :action => 'policy'
   map.get49 '/get49', :controller => 'main', :action => 'get49'
